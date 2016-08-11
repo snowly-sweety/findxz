@@ -1,0 +1,81 @@
+
+body { overflow: hidden; background: #000;}
+
+.on { width: 8.42%; position: absolute; top: 5%; left: 7%; z-index: 1; display: block;}
+.off{ width: 8.42%; position: absolute; top: 5%; left: 7%; z-index: 1; display: none;}
+
+.loading_wrap{ width: 100%; background: #000; line-height: 25em;}
+.loading_wrap p { font-size: 1.5em; color: white; text-align: center;}
+
+.game_wrap {overflow: hidden; width: 100%; height: 100%; background: url(../img/bg.jpg) no-repeat; background-size: cover; display: none;}
+.game_wrap .game_title { margin: 10% auto 0; width: 40%;}
+.game_wrap .game_title img { width: 100%;}
+
+.game_wrap .center_wrap { position: relative;top: -50%; z-index: 1; overflow: hidden; margin: 10% auto 0; width: 100%; background: url(../img/ding.png) no-repeat; background-size: 100% 100%; text-align: center;}
+.game_wrap .center_wrap p {margin: 2% 0; font-size: 1.3em; color: red; width: 100%; text-align: center;}
+.game_wrap .center_wrap .center { margin: 5%; width: 90%;}
+.game_wrap .center_wrap .center .one { position: relative; display: inline-block;}
+.game_wrap .center_wrap .center .one img { width: 100%;}
+.game_wrap .center_wrap .center .one img:nth-of-type(2) { position: absolute; top: 10%; left: 20%; width: 60%;}
+
+.game_images { width: 100%; display: none;}
+.game_images img { position: absolute; width: 15%;}
+.game_images img:nth-of-type(1) {top: 5%; right: 10%;}
+.game_images img:nth-of-type(2) {bottom: 13%; left: 15%;}
+.game_images img:nth-of-type(3) {bottom: 15%; right: 10%;}
+
+.show_img { position: absolute; top: 0; left: 0; z-index: 2; width: 100%; height: 100%; display: none;}
+.show_img img { width: 100%; height: 100%; display: none;}
+.show_img .lose { width: 100%; height: 100%; display: block;}
+
+
+.get_phone { position: absolute; top: 0%; z-index: 3; overflow: hidden; background: url(../img/bg-2.png) no-repeat; background-size: cover; width: 100%; display: none;}
+.get_phone .get_word { margin-top: 40%; font-size: 1em; color: white; text-align: center; width: 100%;}
+.get_phone .get_img { position: relative; top: 12%; left: -3%; width: 100%; display: none;}
+.get_phone .get_img img { position: absolute; width: 30%;}
+.get_phone .get_img img:nth-of-type(1) { top: -10%; left: 5%; width: 31%;}
+.get_phone .get_img img:nth-of-type(2) { top: -10%; left: 60%; width: 28%;}
+.get_phone .get_img img:nth-of-type(3) { top: 10%; left: 60%; width: 34.5%;}
+.get_phone .get_img img:nth-of-type(4) { top: 20%; left: 5%; width: 26%;}
+.get_phone .get_img img:nth-of-type(5) { top: 20%; left: 35%; width: 28.5%;}
+.get_phone .get_img img:nth-of-type(6) { top: 30%; left: 60%; width: 23.3%;}
+.get_phone .get_img img:nth-of-type(7) { top: 55%; left: 5%; width: 26%;}
+.get_phone .get_img img:nth-of-type(8) { top: 65%; left: 55%; width: 34%;}
+.get_phone .get_img img:nth-of-type(9) { top: 33%; left: 43%; width: 15%;}
+.get_phone .onePhone { position: absolute;top: 20%; left: 25%; width: 49%; height: 55%;}
+
+.tip_word { position: absolute; top: 35%; left: 31%; z-index: 4; width: 40%; display: none;}
+.tip_word p { margin-bottom: 10%; color: white; font-size: 0.6em; line-height: 1.1em;}
+.tip_word div { padding: 5%; margin: 3%; width: 72%; border: 1px solid rgb(88,190,221); border-radius: 10px; color: rgb(88,190,221); font-size: 0.6em; text-align: center;}
+
+.game_trans { position: absolute; top: 0%; z-index: 5; width: 100%; background: url(../img/game_trans.png) no-repeat; background-size: 100% 100%; display: none; overflow: hidden;}
+.game_trans .game_top { position: absolute; top: 25%; left: 22%; color: rgb(88,190,221); font-size: 1em; width: 56%;}
+.game_trans .game_top img { position: absolute; right: 0%; top: 0%; width: 7%;}
+.game_trans .game_wrapper { position: relative; margin: 57% 22%; width: 57%; height: 43%; overflow: hidden;}
+.game_trans  .game_wrapper .line { height: 100%; border: 1px solid rgb(106,149,164); position: absolute; top: 1%; left: 96%;}
+.game_trans .game_wrapper .block { position: absolute; top: 1%; left: 94.3%; width: 4%; height: 7%; background: rgb(198,197,196); border-radius: 5px;}
+.game_trans .game_content { position: absolute; width: 90%; color: white; font-size: 0.6em;}
+.game_trans .game_content h4 { margin: 5% 0; color: rgb(88,190,221); font-size: 1.5em;}
+
+.end { position: absolute; top: 0; width: 100%; height: 100%; z-index: 5; display: none;}
+.end .gameover { width: 100%; height: 100%;}
+.end .gameover img:nth-of-type(1) { width: 100%; height: 100%;}
+.end .gameover img:nth-of-type(2) { position: absolute; top: 57.3%; left: 31.5%; width: 36%;}
+.end .gameover img:nth-of-type(3) { position: absolute; top: 62.8%; left: 31.9%; width: 36%;}
+
+.end .gift { width: 100%; height: 100%; display: none; background: rgba(0,0,0,0.8);}
+.end .gift img:nth-of-type(1) { width: 82%; position: absolute; top: 20%; left: 5%;}
+.end .gift .gift-con { position: absolute; top: 35%; left: 17%; z-index: 10; text-align: center; color: white;}
+.end .gift .gift-con p {margin: 10% 0; width: 100%; font-size: 2em;}
+.end .gift .gift-con .return_game { margin: 54% 4% 0;width: 82%; position: absolute; top: 20%; left: 5%;}
+
+.end .gift_get { width: 100%; height: 100%; display: none; background: rgba(0,0,0,0.8);}
+.end .gift_get img:nth-of-type(1) { width: 100%;}
+.end .gift_get img:nth-of-type(2) { width: 82%; position: absolute; top: 20%; left: 5%;}
+.end .gift_get .prize { position: absolute; top: 39%; left: 22%; text-align: center;}
+.end .gift_get .prize p { font-size: 1.5em; margin: 5% 0; color: white;}
+.end .gift_get .prize span { font-size: 1em; margin: 5% 0; color: white;}
+.end .gift_get .prize div { text-align: right; margin: 5% 0; border-bottom: 1px gray dashed; padding-bottom: 3%;}
+.end .gift_get .prize div input{ background: rgba(38,55,60,0); border: 0 none; color: white; outline: none;}
+.end .gift_get .prize .prize_type { }
+.end .gift_get .submit_btn { margin: 5% 0 0; color: rgb(102,193,240); border: 1px solid rgb(103,135,145); padding: 2% 10%; border-radius: 10px; font-size: 1em; background: 0;}

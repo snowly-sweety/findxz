@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/game.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animation.css"/>
+	</head>
+	<body>
+		<div class="loading_wrap backg">
+			<p>去往行星途中,请稍后...</p>
+		</div>
+		<div class="con_music">
+			<audio src="mp3/The All Spark （节） (50kb).mp3" loop="loop" autoplay="autoplay" class="bg_mus"></audio>
+			<audio src="mp3/倒计时音效 （节）.mp3" class="set_time" loop="loop"></audio>
+			
+		</div>
+		<img src="img/music_on.png" class="on"/>
+		<img src="img/off.png" class="off" />
+		<div class="game_wrap backg">
+			<div class="game_title">
+				<img/>
+			</div>
+			<div class="center_wrap">
+				<p class="time">60:00</p>
+				<div class="center"></div>
+			</div>
+		</div>
+		<div class="game_images">
+			<img src="img/xingxing.png"/>
+			<img src="img/sanjiao.png"/>
+			<img src="img/duodian.png"/>
+		</div>
+		<div class="show_img">
+			<img src="img/tan1.png"/>
+			<img src="img/tan2.png"/>
+			<img src="img/tan3.png"/>
+			<img src="img/tan4.png"/>
+			<img src="img/tan5.png"/>
+			<img src="img/tan6.png"/>
+			<img src="img/tan7.png"/>
+			<img src="img/tan8.png"/>
+		</div>
+		<div class="get_phone backg">
+			<p class="get_word">
+				旺德福<br />
+				你已集齐徐铮分身<br />
+				vivo X5pro碎片开始合体<br />
+				合体中<br />
+				...<br />
+			</p>
+			<div class="get_img backg">
+				<img src="img/end7.png"/>
+				<img src="img/end8.png"/>
+				<img src="img/end6.png"/>
+				<img src="img/end3.png"/>
+				<img src="img/chip5.png"/>
+				<img src="img/end4.png"/>
+				<img src="img/end1.png"/>
+				<img src="img/end2.png"/>
+				<img src="img/end5.png"/>
+			</div>
+			<div class="tip_word">
+				<p>
+					成功合体！<br />
+					距离启动神秘力量<br />
+					还差最后一步，<br />
+					请点击......<br />
+				</p>
+				<div class="btnOne">
+					开始抽奖
+				</div>
+				<div class="btnTwo">
+					游戏说明
+				</div>
+			</div>
+		</div>
+		<div class="game_trans backg">
+			<div class="game_top">
+				<p>找徐峥 送vivo</p>
+				<img src="img/guanbi.png" class="close"/>
+			</div>
+			<div class="game_wrapper">
+				<div class="game_content">
+					<h4>游戏规则：</h4>
+					<p>
+						1.玩家要在规定时间内，依次从2*2至7*7的方格中找徐铮。点对徐铮，即可过关。
+					</p>
+					<p>
+						2.每找到一个徐铮，得到一个vivo手机“碎片”。集齐8块“碎片”，即获得一次抽奖机会。
+					</p>
+					<p>
+						3.中奖玩家请正确填写信息。信息填写错误或未填写的玩家将被取消中奖资格。
+					</p>
+					<p>
+						4.每个ID只有一次中奖机会。
+					</p>
+					<p>
+						5.恶意刷奖的玩家一经发现将取消抽奖资格。
+					</p>
+					<h4>活动时间：</h4>
+					<p>
+						2015年9月28至10月2日
+					</p>
+					<h4>游戏奖励：</h4>
+					<p>
+						一等奖：vivo X5Pro智能手机 2台
+					</p>
+					<p>
+						二等奖：vivo充电宝 10个
+					</p>
+					<p>
+						三等奖：vivo耳机 20个
+					</p>
+					<p>
+						四等奖：《港囧》电影票20套（每套2张）
+					</p>
+					<p>
+						五等奖：《港囧》主创签名剧照 50张
+					</p>
+					<p>
+						注：电影票为格瓦拉兑换券，中奖玩家请自行兑换
+					</p>
+				</div>
+				<div class="line"></div>
+				<div class="block"></div>
+			</div>
+		</div>
+		<div class="end">
+			<!--闯敢失败，弹窗-->
+			<div class="gameover"></div>
+			<!--抽奖失败弹窗-->
+			<div class="gift">
+				<img src="img/jiqiren.png"/>
+				<div class="gift-con">
+					<p>很遗憾</p>
+					<span>你没有抽中奖品，再玩一次吧</span>
+					<img src="img/返回游戏.png" class="return_game"/>
+				</div>
+			</div>
+			<!--抽奖成功弹窗-->
+			<div class="gift_get">
+				<img src="img/kong.png"/>
+				<img src="img/xuzheng_succ_kuang.png"/>
+				<div class="prize">
+					<p>恭喜你获得</p>
+					<span class="prize_type"></span>
+					<form action="http://snowlearnweixin.applinzi.com/findxz/put.php" method="post" id="formSubmit">
+						<div>
+							<span>姓名</span>
+							<input type="text" name="name" id="" value="" class="name" />
+						</div>
+						<div>
+							<span>手机号</span>
+							<input type="text" name="phone" id="" value="" class="phone" />
+						</div>
+						<input type="submit" value="提交信息" class="submit_btn"/>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/touchjs.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/isPC.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mousewheelFunction.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/game.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		function callBackFun(data){
+			wx.config({
+				debug:true,
+				appId:data.appId,
+				timestamp:data.timeStamp,
+				nonceStr:data.nonceStr,
+				signature:data.signature,
+				jsApiList:[
+					'checkJsApi',
+			        'onMenuShareTimeline',
+			        'onMenuShareAppMessage',
+			        'onMenuShareQQ',
+			        'onMenuShareWeibo',
+			        'onMenuShareQZone',
+			        'hideMenuItems',
+			        'showMenuItems',
+			        'hideAllNonBaseMenuItem',
+			        'showAllNonBaseMenuItem',
+			        'translateVoice',
+			        'startRecord',
+			        'stopRecord',
+			        'onVoiceRecordEnd',
+			        'playVoice',
+			        'onVoicePlayEnd',
+			        'pauseVoice',
+			        'stopVoice',
+			        'uploadVoice',
+			        'downloadVoice',
+			        'chooseImage',
+			        'previewImage',
+			        'uploadImage',
+			        'downloadImage',
+			        'getNetworkType',
+			        'openLocation',
+			        'getLocation',
+			        'hideOptionMenu',
+			        'showOptionMenu',
+			        'closeWindow',
+			        'scanQRCode',
+			        'chooseWXPay',
+			        'openProductSpecificView',
+			        'addCard',
+			        'chooseCard',
+			        'openCard'
+				]
+			})
+		}
+	</script>
+	<script type="text/javascript">
+		var sc = document.createElement("script");
+		sc.src = "http://snowlearnweixin.applinzi.com/找徐峥/sign.php?cb=callBackFun&url" + encodeURIComponent(location.href.split("#")[0]);
+		document.body.appendChild(sc);
+	</script>
+	<script type="text/javascript">
+		wx.ready(function(){
+		    // config信息验证后会执行ready方法，所有接口调用都必须在config接口获得结果之后，config是一个客户端的异步操作，所以如果需要在页面加载时就调用相关接口，则须把相关接口放在ready函数中调用来确保正确执行。对于用户触发时才调用的接口，则可以直接调用，不需要放在ready函数中。
+		    wx.checkJsApi({
+			    jsApiList: ['onMenuShareTimeline'], // 需要检测的JS接口列表，所有JS接口列表见附录2,
+			    success: function(res) {
+			        // 以键值对的形式返回，可用的api值true，不可用为false
+			        // 如：{"checkResult":{"chooseImage":true},"errMsg":"checkJsApi:ok"}
+			    }
+			});
+			
+			wx.onMenuShareAppMessage({
+			    title: '开心找徐峥，快乐赢vivo', // 分享标题
+			    desc: '快让你的小伙伴们一起来找吧！', // 分享描述
+			    link: 'http://snowlearnweixin.applinzi.com/找徐峥/index.html', // 分享链接
+			    imgUrl: 'http://snowlearnweixin.applinzi.com/找徐峥/img/share.jpg', // 分享图标
+			    success: function () { 
+			        // 用户确认分享后执行的回调函数
+			        shareFun();
+			    },
+			    cancel: function () { 
+			        // 用户取消分享后执行的回调函数
+			        alert("取消分享");
+			    }
+			});
+			
+			wx.onMenuShareTimeline({
+			    title: '开心找徐峥，快乐赢vivo', // 分享标题
+			    link: '快让你的小伙伴们一起来找吧！', // 分享链接
+			    imgUrl: 'http://snowlearnweixin.applinzi.com/找徐峥/img/share.jpg', // 分享图标
+			    success: function () { 
+			        // 用户确认分享后执行的回调函数
+			        shareFun();
+			    },
+			    cancel: function () { 
+			        // 用户取消分享后执行的回调函数
+			        alert("取消分享");               
+			    }
+			});
+			function shareFun(){
+				window.location.href = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxf4fea5ca4039e0f2&redirect_uri=http://snowlearnweixin.applinzi.com/找徐峥/user_info.php&response_type=code&scope=snsapi_base&state=123#wechat_redirect";
+			}
+		});
+
+		
+	</script>
+</html>
